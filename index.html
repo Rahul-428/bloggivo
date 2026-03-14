@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Blog Website</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <div class="container d-flex justify-content-between">
+        <div class="social-nav">
+          <ul>
+            <li>
+              <a href="#">Facebook</a>
+            </li>
+            <li>
+              <a href="#">Twitter</a>
+            </li>
+            <li>
+              <a href="#">Github</a>
+            </li>
+          </ul>
+        </div>
+
+        <div><a href="tel:+918949576772">Call Us : +91 8949 576772</a></div>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero text-center">
+      <div class="hero-content">
+        <h1>Welcome to My Blog</h1>
+        <h3 id="typingText"></h3>
+        <button class="btn btn-danger">Read More</button>
+      </div>
+    </section>
+
+    <div class="container my-5">
+      <div class="row">
+        <!-- BLOG POSTS -->
+        <div class="col-lg-8">
+          <div class="row" id="postContainer"></div>
+
+          <!-- PAGINATION -->
+          <div class="pagination-box text-center mt-4">
+            <button id="prevBtn">Prev</button>
+
+            <span id="pageNum"></span>
+
+            <button id="nextBtn">Next</button>
+          </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="col-lg-4">
+          <!-- SEARCH -->
+          <div class="card p-3 mb-4">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search..."
+              class="form-control mb-2"
+            />
+
+            <button class="btn btn-danger w-100">Search</button>
+          </div>
+
+          <!-- CATEGORY FILTER -->
+          <div class="card p-3 mb-4">
+            <h5>Categories</h5>
+
+            <select id="categoryFilter" class="form-control">
+              <option value="">All Categories</option>
+            </select>
+          </div>
+
+          <!-- AUTHOR -->
+          <div class="card text-center p-3 mb-4">
+            <img src="images/author.jpg" class="img-fluid mb-3" />
+
+            <h5>RK</h5>
+
+            <p>Designer & Developer</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+
+          <!-- LATEST POSTS -->
+          <div class="card p-3 mb-4">
+            <h5>Latest Posts</h5>
+            <ul id="latestPostsHome" class="list-unstyled"></ul>
+          </div>
+
+          <!-- TAGS -->
+          <div class="card p-3">
+            <h5>Tags</h5>
+            <div id="tagsContainer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              @ 2026 RK Blogs. All rights reserved. | Design And Developed By RK
+            </p>
+            <ul>
+              <li>
+                <a href="mailto:rahulmathur04rm@gmail.com">
+                  rahulmathur04rm@gmail.com
+                </a>
+              </li>
+              |
+              <li><a href="tel:+918949576772">+91 8949 576772</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

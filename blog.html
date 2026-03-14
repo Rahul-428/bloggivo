@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Blog Detail</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <div class="container d-flex justify-content-between">
+        <div>Facebook | Twitter | Github</div>
+
+        <div><a href="mailto:bloggivo@gmail.com"> bloggivo@gmail.com </a></div>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero text-center">
+      <div class="hero-content">
+        <h2 id="blogTitle"></h2>
+        <h5 id="blogCategory"></h5>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <div class="container my-5">
+      <div class="row">
+        <!-- BLOG CONTENT -->
+        <div class="col-lg-8">
+          <img id="blogImage" class="img-fluid mb-4" />
+
+          <p id="blogTag" class="text-muted"></p>
+
+          <!--  -->
+          <div id="blogContent"></div>
+
+          <!-- BLOG META -->
+          <!-- <div class="blog-meta mt-4">
+            <span id="readingTime" class="me-3"></span>
+
+            <button id="likeBtn" class="btn btn-outline-danger btn-sm">
+              ❤️ Like (<span id="likeCount">0</span>)
+            </button>
+          </div> -->
+
+          <!-- COMMENTS -->
+          <!-- <div class="comments-section mt-5">
+            <h4>Comments</h4>
+
+            <div id="commentsList"></div>
+
+            <div class="card p-3 mt-3">
+              <input
+                id="commentName"
+                class="form-control mb-2"
+                placeholder="Your Name"
+              />
+
+              <textarea
+                id="commentText"
+                class="form-control mb-2"
+                placeholder="Write a comment"
+              ></textarea>
+
+              <button onclick="addComment()" class="btn btn-danger btn-sm">
+                Post Comment
+              </button>
+            </div>
+          </div> -->
+          <!--  -->
+          <div class="share-box mt-4">
+            <a
+              class="share facebook"
+              target="_blank"
+              href="https://www.facebook.com/sharer/sharer.php?u=${blogURL}&quote=${shareTitle}"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a
+              class="share twitter"
+              target="_blank"
+              href="https://twitter.com/intent/tweet?url=${blogURL}&text=${shareTitle}"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a
+              class="share linkedin"
+              target="_blank"
+              href="https://www.linkedin.com/sharing/share-offsite/?url=${blogURL}"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a
+              class="share whatsapp"
+              target="_blank"
+              href="https://wa.me/?text=${shareTitle}%20${blogURL}"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <a
+              class="share instagram"
+              target="_blank"
+              href="https://www.instagram.com/"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <button class="share copy" onclick="copyLink('${blogURL}')">
+              <i class="fa fa-link"></i>
+            </button>
+          </div>
+
+          <!-- RELATED POSTS -->
+          <!-- <h4 class="mt-5 mb-4">Related Posts</h4>
+
+          <div class="row" id="relatedPosts"></div>
+
+          <a href="index.html" class="btn btn-danger mt-4">Back to Blog</a> -->
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="col-lg-4">
+          <!-- AUTHOR -->
+          <div class="card text-center p-3 mb-4">
+            <img src="images/author.jpg" class="img-fluid mb-3" />
+
+            <h5>Rahul Mathur</h5>
+
+            <p>Designer, Developer & Writer</p>
+
+            <!-- <p>Lorem ipsum dolor sit amet consectetur.</p> -->
+          </div>
+
+          <!-- LATEST POSTS -->
+          <!-- <div class="card p-3 mb-4">
+            <h5>Latest Posts</h5>
+            <ul id="latestPosts" class="list-unstyled"></ul>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              @ 2026 RK Blogs. All rights reserved. | Design And Developed By RK
+            </p>
+            <ul>
+              <li>
+                <a href="mailto:bloggivo@gmail.com"> bloggivo@gmail.com </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="blog.js"></script>
+  </body>
+</html>
